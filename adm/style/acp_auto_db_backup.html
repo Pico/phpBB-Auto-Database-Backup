@@ -1,0 +1,98 @@
+<!-- INCLUDE overall_header.html -->
+
+<h1>{L_ACP_AUTO_DB_BACKUP_SETTINGS_TITLE}</h1>
+
+<p>{L_ACP_AUTO_DB_BACKUP_SETTINGS_EXPLAIN}</p>
+
+<!-- IF S_ERROR -->
+	<div class="errorbox">
+		<h3>{L_WARNING}</h3>
+		<p>{ERROR_MSG}</p>
+	</div>
+<!-- ENDIF -->
+
+<form id="acp_auto_db_backup" method="post" action="{U_ACTION}">
+
+<fieldset>
+	<legend>{L_SETTINGS}</legend>
+<dl>
+	<dt><label for="auto_db_backup_enable">{L_AUTO_DB_BACKUP_ENABLE}{L_COLON}</label><br /><span>{L_AUTO_DB_BACKUP_ENABLE_EXPLAIN}</span></dt>
+	<dd><label><input type="radio" class="radio" id="auto_db_backup_enable" name="auto_db_backup_enable" value="1"<!-- IF S_AUTO_DB_BACKUP_ENABLE --> checked="checked"<!-- ENDIF --> /> {L_ENABLED}</label>
+		<label><input type="radio" class="radio" name="auto_db_backup_enable" value="0"<!-- IF not S_AUTO_DB_BACKUP_ENABLE --> checked="checked"<!-- ENDIF --> /> {L_DISABLED}</label></dd>
+</dl>
+<dl>
+	<dt><label for="auto_db_backup_filetype">{L_AUTO_DB_BACKUP_FILETYPE}{L_COLON}</label><br /><span>{L_AUTO_DB_BACKUP_FILETYPE_EXPLAIN}</span></dt>
+	<dd>
+		<!-- BEGIN filetypes -->
+			<label><input type="radio" class="radio" id="auto_db_backup_filetype" name="auto_db_backup_filetype" value="{filetypes.FILETYPE}"<!-- IF filetypes.S_CHECKED --> checked="checked"<!-- ENDIF --> />{filetypes.FILETYPE}</label>
+		<!-- END filetypes -->
+	</dd>
+</dl>
+<dl>
+	<dt><label for="auto_db_backup_gc">{L_AUTO_DB_BACKUP_FREQ}{L_COLON}</label><br /><span>{L_AUTO_DB_BACKUP_FREQ_EXPLAIN}</span></dt>
+	<dd><input id="auto_db_backup_gc" type="number" maxlength="2" name="auto_db_backup_gc" value="{AUTO_DB_BACKUP_GC}"  /> <span>{L_DAYS}</span></dd>
+</dl>
+<dl>
+	<dt><label for="auto_db_backup_copies">{L_AUTO_DB_BACKUP_COPIES}{L_COLON}</label><br /><span>{L_AUTO_DB_BACKUP_COPIES_EXPLAIN}</span></dt>
+	<dd><input  id="auto_db_backup_copies" type="number" maxlength="2" name="auto_db_backup_copies" value="{AUTO_DB_BACKUP_COPIES}"/></dd>
+</dl>
+<dl>
+	<dt><label for="auto_db_backup_optimize">{L_AUTO_DB_BACKUP_OPTIMIZE}{L_COLON}</label><br /><span>{L_AUTO_DB_BACKUP_OPTIMIZE_EXPLAIN}</span></dt>
+	<dd><label><input type="radio" class="radio" id="auto_db_backup_optimize" name="auto_db_backup_optimize" value="1"<!-- IF S_AUTO_DB_BACKUP_OPTIMIZE --> checked="checked"<!-- ENDIF --> /> {L_ENABLED}</label>
+		<label><input type="radio" class="radio" name="auto_db_backup_optimize" value="0"<!-- IF not S_AUTO_DB_BACKUP_OPTIMIZE --> checked="checked"<!-- ENDIF --> /> {L_DISABLED}</label></dd>
+</dl>
+<dl>
+	<dt><label for="auto_db_backup_day">{L_AUTO_DB_BACKUP_TIME}{L_COLON}</label><br /><span>{L_AUTO_DB_BACKUP_TIME_EXPLAIN}</span></dt>
+	<dd>
+		<label for="auto_db_backup_day">{L_DAY}{L_COLON}
+			<select name="auto_db_backup_day" id="auto_db_backup_day">
+			<!-- BEGIN days -->
+				<option value="{days.DAY}"<!-- IF days.S_SELECTED --> selected="selected"<!-- ENDIF -->>{days.DAY}</option>
+			<!-- END days -->
+			</select>
+		</label>
+		<label for="auto_db_backup_month">{L_MONTH}{L_COLON}
+			<select name="auto_db_backup_month" id="auto_db_backup_month">
+			<!-- BEGIN months -->
+				<option value="{months.MONTH}"<!-- IF months.S_SELECTED --> selected="selected"<!-- ENDIF -->>{months.MONTH}</option>
+			<!-- END months -->
+			</select>
+		</label>
+		<label for="auto_db_backup_year">{L_YEAR}{L_COLON}
+			<select name="auto_db_backup_year" id="auto_db_backup_year">
+			<!-- BEGIN years -->
+				<option value="{years.YEAR}"<!-- IF years.S_SELECTED --> selected="selected"<!-- ENDIF -->>{years.YEAR}</option>
+			<!-- END years -->
+			</select>
+		</label>
+		<label for="auto_db_backup_hour">{L_HOUR}{L_COLON}
+			<select name="auto_db_backup_hour" id="auto_db_backup_hour">
+			<!-- BEGIN hours -->
+				<option value="{hours.HOUR}"<!-- IF hours.S_SELECTED --> selected="selected"<!-- ENDIF -->>{hours.HOUR}</option>
+			<!-- END hours -->
+			</select>
+		</label>
+		<label for="auto_db_backup_minute">{L_MINUTE}{L_COLON}
+			<select name="auto_db_backup_minute" id="auto_db_backup_minute">
+			<!-- BEGIN minutes -->
+				<option value="{minutes.MINUTE}"<!-- IF minutes.S_SELECTED --> selected="selected"<!-- ENDIF -->>{minutes.MINUTE}</option>
+			<!-- END minutes -->
+			</select>
+		</label>
+	</dd>
+</dl>
+</fieldset>
+
+<fieldset>
+	<legend>{L_ACP_SUBMIT_CHANGES}</legend>
+
+	<p class="submit-buttons">
+		<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+		<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+		{S_FORM_TOKEN}
+	</p>
+
+</fieldset>
+</form>
+
+<!-- INCLUDE overall_footer.html -->
