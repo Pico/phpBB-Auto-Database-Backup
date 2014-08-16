@@ -1,0 +1,10 @@
+{
+	"unstable": {
+		"1.1": {
+			"current": "1.1.0-b2",
+			"announcement": "https://github.com/Pico/phpBB-Auto-Database-Backup/releases/tag/v1.1.0-b2",
+			"eol": null,
+			"security": false
+		}
+	}
+}
