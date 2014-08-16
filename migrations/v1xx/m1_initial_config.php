@@ -17,7 +17,7 @@ class m1_initial_config extends \phpbb\db\migration\migration
 		return array(
 			array('config.add', array('auto_db_backup_enable', '0')),
 			array('config.add', array('auto_db_backup_copies', 7)),
-			array('config.add', array('auto_db_backup_gc', 1)),
+			array('config.add', array('auto_db_backup_gc', 86400)),
 			array('config.add', array('auto_db_backup_last_gc', time(), 1)),
 			array('config.add', array('auto_db_backup_filetype', 'text')),
 			array('config.add', array('auto_db_backup_optimize', '0')),
