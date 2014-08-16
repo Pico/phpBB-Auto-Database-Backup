@@ -3,7 +3,7 @@
 	"type": "phpbb-extension",
 	"description": "An extension for phpBB 3.1 that will automatically backup your database using the phpBB 3.1 Cron.",
 	"homepage": "https://github.com/Pico/phpBB-Auto-Database-Backup",
-	"version": "1.1.0-dev",
+	"version": "1.1.0-b1",
 	"keywords": ["phpbb", "extension", "topic", "preview"],
 	"license": "GPL-2.0",
 	"authors": [
@@ -19,7 +19,7 @@
 	"extra": {
 		"display-name": "Auto Database Backup",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.1.0-RC2,<3.2.*@dev"
+			"phpbb/phpbb": ">=3.1.0-RC3,<3.2.*@dev"
 		}
 	}
 }
