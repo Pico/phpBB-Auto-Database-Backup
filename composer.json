@@ -23,7 +23,7 @@
 		"display-name": "Auto Database Backup",
 		"soft-require": {
 			"phpbb/phpbb": ">=3.1.0-RC3,<3.2.*@dev"
-		}
+		},
 		"version-check": {
 			"host": "pico.github.io",
 			"directory": "/phpBB-Auto-Database-Backup",
