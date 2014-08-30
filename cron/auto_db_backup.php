@@ -56,7 +56,7 @@ class auto_db_backup extends \phpbb\cron\task\base
 				$tables = $this->db->sql_fetchrowset($result);
 				$size = sizeof($tables);
 
-				for ($i = 0; $i < $size; $i++ )
+				for ($i = 0; $i < $size; $i++)
 				{
 					if ($tables[$i]['Data_free'] != 0)
 					{
