@@ -2,6 +2,8 @@
 
 This is the repository for the development of the phpBB Auto Database Backup Extension.
 
+[![Build Status](https://travis-ci.org/Pico/phpBB-Auto-Database-Backup.svg?branch=master)](https://travis-ci.org/Pico/phpBB-Auto-Database-Backup)
+
 ## Quick Install
 You can install this on the latest copy of the develop branch ([phpBB 3.1-dev](https://github.com/phpbb/phpbb3)) by following the steps below:
 
