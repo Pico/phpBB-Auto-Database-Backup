@@ -26,5 +26,3 @@ $lang = array_merge($lang, array(
 	'LOG_AUTO_DB_BACKUP'					=> '<strong>Auto database backup</strong>',
 	'LOG_AUTO_DB_BACKUP_SETTINGS_CHANGED'	=> '<strong>Altered Auto Database Backup settings</strong>',
 ));
-
-?>
