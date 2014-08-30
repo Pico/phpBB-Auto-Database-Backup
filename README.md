@@ -19,7 +19,7 @@ You can install this on the latest copy of the develop branch ([phpBB 3.1-dev](h
 2. Look for `Auto Database Backup` under the Enabled Extensions list, and click its `Disable` link.
 3. To permanently uninstall, click `Delete Data` and then delete the `/ext/pico/autodbbackup` folder.
 
-## AUTOMATED TESTING
+## Automated Testing
 
 * master [![Build Status](https://travis-ci.org/Pico/phpBB-Auto-Database-Backup.svg?branch=master)](https://travis-ci.org/Pico/phpBB-Auto-Database-Backup)
 * develop [![Build Status](https://travis-ci.org/Pico/phpBB-Auto-Database-Backup.svg?branch=develop)](https://travis-ci.org/Pico/phpBB-Auto-Database-Backup)
