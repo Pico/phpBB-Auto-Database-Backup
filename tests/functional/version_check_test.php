@@ -33,7 +33,7 @@ class version_check_test extends \phpbb_functional_test_case
 
 		$crawler = self::request('GET', 'adm/index.php?i=acp_extensions&mode=main&action=list&versioncheck_force=1&sid=' . $this->sid);
 
-		$this->assertContains(strtolower($this->lang('AUTO_DB_BACKUP')), strtolower($crawler->filter('tr.ext_enabled td')->eq(0)->text()));
+		$this->assertContains(strtolower($this->lang('ACP_AUTO_DB_BACKUP')), strtolower($crawler->filter('tr.ext_enabled td')->eq(0)->text()));
 
 		$this->assertGreaterThan(1, $crawler->filter('tr.ext_enabled td strong')->count());
 	}
