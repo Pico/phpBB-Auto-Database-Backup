@@ -22,9 +22,9 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-	'ACP_AUTO_DB_BACKUP_SETTINGS_TITLE'		=> 'Auto Database Backup settings',
-	'ACP_AUTO_DB_BACKUP_SETTINGS_EXPLAIN'	=> 'Here you can set up default settings for automatic database backups. Depending on your server configuration you may be able to compress the database.<br />All backups will be stored in <samp>/store/</samp> folder. You can restore backup via <em>Restore</em> panel.',
-	'AUTO_BACKUP_SETTINGS_CHANGED'			=> 'Auto Database Backup Settings changed.',
+	'AUTO_DB_BACKUP_SETTINGS'				=> 'Auto Database Backup settings',
+	'AUTO_DB_BACKUP_SETTINGS_EXPLAIN'		=> 'Here you can set up default settings for automatic database backups. Depending on your server configuration you may be able to compress the database.<br />All backups will be stored in <samp>/store/</samp> folder. You can restore backup via <em>Restore</em> panel.',
+	'AUTO_DB_BACKUP_SETTINGS_CHANGED'		=> 'Auto Database Backup Settings changed.',
 	'AUTO_DB_BACKUP_ENABLE'					=> 'Enable Auto Database Backup',
 	'AUTO_DB_BACKUP_ENABLE_EXPLAIN'			=> 'Enable or disable automatic database backups',
 	'AUTO_DB_BACKUP_FREQ'					=> 'Backup frequency',

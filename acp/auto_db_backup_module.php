@@ -39,7 +39,7 @@ class auto_db_backup_module
 		$this->user->add_lang_ext('pico/autodbbackup', 'auto_db_backup_acp');
 
 		$this->tpl_name = 'acp_auto_db_backup';
-		$this->page_title = $this->user->lang('ACP_AUTO_DB_BACKUP_SETTINGS_TITLE');
+		$this->page_title = $this->user->lang('AUTO_DB_BACKUP_SETTINGS');
 
 		$form_key = 'acp_auto_db_backup';
 		add_form_key($form_key);
