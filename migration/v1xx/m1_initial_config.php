@@ -8,7 +8,7 @@
 *
 */
 
-namespace pico\autodbbackup\migrations\v1xx;
+namespace pico\autodbbackup\migration\v1xx;
 
 class m1_initial_config extends \phpbb\db\migration\migration
 {
