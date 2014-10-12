@@ -159,7 +159,7 @@ class auto_db_backup_module
 
 				$phpbb_log->add('admin', $this->user->data['user_id'], $this->user->ip, 'LOG_AUTO_DB_BACKUP_SETTINGS_CHANGED');
 
-				trigger_error($this->user->lang('AUTO_BACKUP_SETTINGS_CHANGED') . adm_back_link($this->u_action));
+				trigger_error($this->user->lang('AUTO_DB_BACKUP_SETTINGS_CHANGED') . adm_back_link($this->u_action));
 			}
 		}
 
