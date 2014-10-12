@@ -23,7 +23,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ACP_AUTO_DB_BACKUP'					=> 'Automaatne varukoopia andmebaasist',
-	'ACP_AUTO_DB_BACKUP_SETTINGS'			=> 'Automaatse varukoopia seaded',
-	'LOG_AUTO_DB_BACKUP'					=> '<strong>Automaatse andmebaasi varukoopia</strong>',
-	'LOG_AUTO_DB_BACKUP_SETTINGS_CHANGED'	=> '<strong>Seaded automaatse andmebaasi varukoopias muudetud</strong>',
+	'ACP_AUTO_DB_BACKUP_SETTINGS'			=> 'Automaatne varukoopia',
+	'LOG_AUTO_DB_BACKUP'					=> '<strong>Automaatne varukoopia andmebaasist</strong>',
+	'LOG_AUTO_DB_BACKUP_SETTINGS_CHANGED'	=> '<strong>Andmebaasi automaatse varukoopia seaded muudetud</strong>',
 ));
