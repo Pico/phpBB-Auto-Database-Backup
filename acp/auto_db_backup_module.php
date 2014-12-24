@@ -47,17 +47,19 @@ class auto_db_backup_module
 		$errors = array();
 
 		// File types
-		$filetypes = array('text');
+		$filetypes = array();
 
 		if (@extension_loaded('zlib'))
 		{
-			$filetypes[] = 'zlib';
+			$filetypes[] = 'gzip';
 		}
 
 		if (@extension_loaded('bz2'))
 		{
-			$filetypes[] = 'bz2';
+			$filetypes[] = 'bzip2';
 		}
+
+		$filetypes[] = 'text';
 
 		foreach ($filetypes as $filetype)
 		{

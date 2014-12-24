@@ -1,33 +1,39 @@
 {
-	"name": "pico/autodbbackup",
-	"type": "phpbb-extension",
-	"description": "An extension for phpBB 3.1 that will automatically backup your database using the phpBB 3.1 Cron.",
-	"homepage": "https://github.com/Pico/phpBB-Auto-Database-Backup",
-	"version": "1.1.0-b3",
-	"keywords": ["phpbb", "extension", "auto", "database", "backup"],
-	"license": "GPL-2.0",
-	"authors": [
-		{
-			"name": "Lukasz Kaczynski",
-			"role": "Developer"
-		}
-	],
-	"require": {
-		"php": ">=5.3.3",
-		"composer/installers": "~1.0"
-	},
-	"require-dev": {
-		"phpbb/epv": "dev-master"
-	},
-	"extra": {
-		"display-name": "Auto Database Backup",
-		"soft-require": {
-			"phpbb/phpbb": ">=3.1.0-RC3,<3.2.*@dev"
-		},
-		"version-check": {
-			"host": "pico.github.io",
-			"directory": "/phpBB-Auto-Database-Backup",
-			"filename": "version.json"
-		}
-	}
+    "name": "pico/autodbbackup",
+    "type": "phpbb-extension",
+    "description": "An extension for phpBB 3.1 that will automatically backup your database using the phpBB 3.1 Cron.",
+    "homepage": "https://github.com/Pico/phpBB-Auto-Database-Backup",
+    "version": "1.1.0",
+    "keywords": [
+        "phpbb",
+        "extension",
+        "auto",
+        "database",
+        "backup"
+    ],
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Lukasz Kaczynski",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "composer/installers": "~1.0"
+    },
+    "require-dev": {
+        "phpbb/epv": "dev-master"
+    },
+    "extra": {
+        "display-name": "Auto Database Backup",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.1.0-RC3,<3.2.*@dev"
+        },
+        "version-check": {
+            "host": "www.phpbb.com",
+            "directory": "/customise/db/extension/auto_database_backup_2",
+            "filename": "version_check"
+        }
+    }
 }

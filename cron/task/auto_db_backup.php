@@ -8,7 +8,7 @@
 *
 */
 
-namespace pico\autodbbackup\cron;
+namespace pico\autodbbackup\cron\task;
 
 class auto_db_backup extends \phpbb\cron\task\base
 {
