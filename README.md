@@ -22,7 +22,6 @@ You can install this on the latest copy of the develop branch ([phpBB 3.1-dev](h
 ## Automated Testing
 
 * master [![Build Status](https://travis-ci.org/Pico/phpBB-Auto-Database-Backup.svg?branch=master)](https://travis-ci.org/Pico/phpBB-Auto-Database-Backup)
-* develop [![Build Status](https://travis-ci.org/Pico/phpBB-Auto-Database-Backup.svg?branch=develop)](https://travis-ci.org/Pico/phpBB-Auto-Database-Backup)
 
 ## License
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
